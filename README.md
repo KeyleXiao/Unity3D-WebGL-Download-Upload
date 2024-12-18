@@ -129,6 +129,7 @@ Then you can send a message to the build using gameInstance.SendMessage(), or ac
 ```
 
 The following code is the generated index.html, where we directly save the Unity instance to the current window window.unityInstance = unityInstance; for global calls.
+
 下面代码是生成后的index.html，我们直接将unity的实例保存到当前window中` window.unityInstance = unityInstance;` 方便全局调用。
 
 ``` js
