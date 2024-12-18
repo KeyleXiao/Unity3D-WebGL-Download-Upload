@@ -26,7 +26,8 @@ Below is a JS encapsulation library that implements the download and upload of i
 
 ## 文件下载
 下面是个js封装库，并且实现了对图片文件的下载与上传。
-```
+
+```js
 mergeInto(LibraryManager.library, {
     DownloadTexture: function (dataPtr, dataLength, fileName) {
         var data = HEAPU8.subarray(dataPtr, dataPtr + dataLength);
@@ -86,7 +87,8 @@ Here, async syntax is used. Note that if you change this part and an error occur
 这里使用了async语法，注意如果你改动这部分报错了，大概不会提示出来，会很难查bug哦。哈哈
 
 ![](https://i.vrast.cn/i/2024/12/17/rfanrx.webp)
-```
+
+``` C#
     public async void OnImageLoadedAsync(string url)
     {
         // 使用 UnityWebRequest 来下载图片数据
@@ -128,7 +130,8 @@ Then you can send a message to the build using gameInstance.SendMessage(), or ac
 
 The following code is the generated index.html, where we directly save the Unity instance to the current window window.unityInstance = unityInstance; for global calls.
 下面代码是生成后的index.html，我们直接将unity的实例保存到当前window中` window.unityInstance = unityInstance;` 方便全局调用。
-```
+
+``` js
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
